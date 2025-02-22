@@ -12,7 +12,7 @@ const { Builder, By, until } = require('selenium-webdriver');
 
         // Tunggu sampai halaman dashboard terbuka
         await driver.wait(until.urlContains('inventory.html'), 5000);
-        console.log("✅ Login berhasil!");
+        console.log("Login berhasil!");
 
     } finally {
         await driver.quit();
